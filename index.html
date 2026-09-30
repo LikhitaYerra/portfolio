@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Likhita Yerra · AI Engineer & Researcher</title>
+  <meta name="description" content="AI Engineer in Paris. Production RAG-LLM systems, LLM evaluation research, and generate-measure-rebuild pipelines." />
+  <meta property="og:title" content="Likhita Yerra · AI Engineer & Researcher" />
+  <meta property="og:description" content="Paris-based AI engineer. RAG-LLM shipping, LLM eval research, identity-preserving generation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="mark" href="#top">LY</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Paris · Châtenay-Malabry</p>
+      <h1 class="brand">Likhita<br />Yerra</h1>
+      <p class="lede">
+        AI Engineer and researcher. I ship production RAG-LLM systems, then measure what breaks:
+        calibration, retrieval, latency, cost.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="mailto:likhita.yerra@aivancity.education">Email</a>
+        <a class="btn" href="https://github.com/LikhitaYerra" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/likhita-yerra" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="ring r3"></div>
+        <span class="metric">generate → measure → rebuild</span>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2>Selected work</h2>
+      <p class="section-note">Public repos and demos. Private client work at IAware stays offline.</p>
+      <ul class="work-list">
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/Compar-IA-Benchmarking-Dashboard" target="_blank" rel="noopener">
+            <span class="w-title">Compar'IA</span>
+            <span class="w-desc">Multi-objective LLM evaluation across quality, latency, energy, CO₂, and cost. ICPR Green-PR 2026.</span>
+            <span class="w-meta">Python · dashboard · eval</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://emergency-response-twin.onrender.com" target="_blank" rel="noopener">
+            <span class="w-title">Emergency Response Twin</span>
+            <span class="w-desc">Pre-hospital cardiac digital twin: live ECG → AI twin → hospital pre-allocation → 3D command center.</span>
+            <span class="w-meta">Live demo · Render</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/emergency-response-twin" target="_blank" rel="noopener">
+            <span class="w-title">Emergency twin (code)</span>
+            <span class="w-desc">Source for the cardiac twin and command-center stack.</span>
+            <span class="w-meta">GitHub</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/rag_tool" target="_blank" rel="noopener">
+            <span class="w-title">RAG tool</span>
+            <span class="w-desc">Retrieval-augmented generation tooling for document Q&amp;A and pipeline experiments.</span>
+            <span class="w-meta">Python · RAG</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/indexer" target="_blank" rel="noopener">
+            <span class="w-title">Indexer</span>
+            <span class="w-desc">AI-powered book index generator: extract person names from Word documents.</span>
+            <span class="w-meta">NLP · docs</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/ChessVision" target="_blank" rel="noopener">
+            <span class="w-title">ChessVision</span>
+            <span class="w-desc">YOLOv8 + LLM voiced commentary for chess video. IEEE Cognitive Nexus Magazine 2025.</span>
+            <span class="w-meta">CV · YOLO · LLM</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/smc_cnn" target="_blank" rel="noopener">
+            <span class="w-title">SMC + CNN twin</span>
+            <span class="w-desc">Adaptive control with CNN environment classification and a live 3D twin (DelCon 2026).</span>
+            <span class="w-meta">control · PyTorch</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/aegis-eu-agent" target="_blank" rel="noopener">
+            <span class="w-title">Aegis EU agent</span>
+            <span class="w-desc">Agent / compliance-oriented LLM tooling experiment.</span>
+            <span class="w-meta">agents</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research</h2>
+      <ul class="pub-list">
+        <li class="reveal">
+          <p class="pub-title">Do Language Models Know When Their Knowledge Expires?</p>
+          <p class="pub-venue">Women in NeurIPS 2026 (submitted). Calibration decay: accuracy collapses post-cutoff while confidence stays ~90-95%.</p>
+          <a class="pub-link" href="https://drive.google.com/file/d/1kFpBx8oXSipjM6tkSKiw-k1Rwzb2gdGP/view?usp=sharing" target="_blank" rel="noopener">Paper</a>
+        </li>
+        <li class="reveal">
+          <p class="pub-title">Compar'IA: Sustainability-Aware Multi-Objective LLM Evaluation</p>
+          <p class="pub-venue">Green-PR Workshop, ICPR 2026, Lyon.</p>
+          <a class="pub-link" href="https://drive.google.com/file/d/1xC9alkUrMdnNXue8r8t5y2pQz-HeAo2F/view?usp=sharing" target="_blank" rel="noopener">Paper</a>
+        </li>
+        <li class="reveal">
+          <p class="pub-title">Visualizing Adaptive Control: 3D Digital Twin for CNN-Supervised SMC</p>
+          <p class="pub-venue">DelCon 2026, BITS Pilani. ~36% less chattering; EnvCNN 95.1%.</p>
+          <a class="pub-link" href="https://drive.google.com/file/d/1H09hfK1_8U0fcTzYWYiFR_SMd_pRs4DJ/view?usp=sharing" target="_blank" rel="noopener">Paper</a>
+        </li>
+        <li class="reveal">
+          <p class="pub-title">PFE: Reference-Angle Optimization for Identity-Preserving Face Generation</p>
+          <p class="pub-venue">aivancity PGE5, Antoun Yaacoub (defended Sep 2026). ArcFace + LOSO, top-2 @ 85%.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="exp-block reveal">
+        <h3>Employment</h3>
+        <ul class="exp-list">
+          <li>
+            <span class="exp-role">AI Engineer, Apprentice</span>
+            <span class="exp-org">IAware / amzilai · Paris · 2025 to present</span>
+            <p>Production RAG-LLM and client AI features end to end: problem framing, model/API choice, ship, iterate from failures.</p>
+          </li>
+          <li>
+            <span class="exp-role">Lead Data Scientist Intern</span>
+            <span class="exp-org">AIRecruiter · Zurich · Jul to Sep 2024</span>
+            <p>First technical hire; RAG-LLM pipelines with founder and ex-Google engineers.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="exp-block reveal">
+        <h3>AI Clinic (school projects)</h3>
+        <p class="section-note">Partner work via aivancity AI Clinic. Not independent full-time jobs at those companies.</p>
+        <ul class="exp-list compact">
+          <li><span class="exp-org">Pangea Summit</span> multimodal RAG (CLIP + CLAP)</li>
+          <li><span class="exp-org">IMAGE et CONCEPT</span> emotion-aware conversational avatar</li>
+          <li><span class="exp-org">Atos</span> NFT time-series forecasting</li>
+          <li><span class="exp-org">UIZ.CARE</span> ICD medical coding (~93%)</li>
+        </ul>
+      </div>
+      <div class="exp-block reveal">
+        <h3>Education</h3>
+        <ul class="exp-list">
+          <li>
+            <span class="exp-role">MSc AI &amp; Data Science (PGE5)</span>
+            <span class="exp-org">aivancity · Paris · 2023 to present</span>
+          </li>
+          <li>
+            <span class="exp-role">B.Tech (Hons) Data Science &amp; Data Engineering</span>
+            <span class="exp-org">Lovely Professional University · India</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p class="lede short">Open to research engineering and ML roles in Île-de-France (Saclay corridor / Paris).</p>
+      <div class="cta-row">
+        <a class="btn primary" href="mailto:likhita.yerra@aivancity.education">likhita.yerra@aivancity.education</a>
+        <a class="btn" href="https://www.linkedin.com/in/likhita-yerra" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="tel:+33744729838">+33 7 44 72 98 38</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© Likhita Yerra</span>
+    <a href="https://github.com/LikhitaYerra/portfolio">Source on GitHub</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
