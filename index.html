@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Likhita Yerra · AI Engineer & Researcher</title>
-  <meta name="description" content="AI Engineer in Paris. Production RAG-LLM systems, LLM evaluation research, and generate-measure-rebuild pipelines." />
+  <meta name="description" content="AI Engineer in Paris. Production RAG-LLM systems, LLM evaluation, trustworthy AI, and generate-measure-rebuild pipelines." />
   <meta property="og:title" content="Likhita Yerra · AI Engineer & Researcher" />
   <meta property="og:description" content="Paris-based AI engineer. RAG-LLM shipping, LLM eval research, identity-preserving generation." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,6 +22,8 @@
       <a href="#work">Work</a>
       <a href="#research">Research</a>
       <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#certs">Certs</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -31,13 +33,15 @@
       <p class="eyebrow">Paris · Châtenay-Malabry</p>
       <h1 class="brand">Likhita<br />Yerra</h1>
       <p class="lede">
-        AI Engineer and researcher. I ship production RAG-LLM systems, then measure what breaks:
-        calibration, retrieval, latency, cost.
+        AI Engineer and AI &amp; Data Science researcher. I work at the intersection of emerging AI,
+        responsible innovation, and systems that survive contact with users: trustworthy pipelines,
+        sustainable LLM evaluation, RAG, and AI-driven decision-making.
       </p>
       <div class="cta-row">
         <a class="btn primary" href="mailto:likhita.yerra@aivancity.education">Email</a>
         <a class="btn" href="https://github.com/LikhitaYerra" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/likhita-yerra" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://linkedin.com/in/likhita-yerra" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="tel:+33744729838">+33 7 44 72 98 38</a>
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="ring r1"></div>
@@ -47,36 +51,97 @@
       </div>
     </section>
 
+    <section class="section about-strip reveal">
+      <h2>About</h2>
+      <p>
+        Master’s student in AI &amp; Data Science at aivancity (Paris, final year / PGE5). By day I
+        ship production AI as an engineer apprentice at IAware/amzilai. My research asks not only
+        what models can do, but how deployment affects people and institutions: calibration under
+        knowledge expiry, multi-objective LLM tradeoffs (quality, latency, energy, cost), and
+        identity-preserving generation with hard metrics.
+      </p>
+    </section>
+
     <section id="work" class="section">
-      <h2>Selected work</h2>
-      <p class="section-note">Public repos and demos. Private client work at IAware stays offline.</p>
+      <h2>Selected projects</h2>
+      <p class="section-note">Titles link to GitHub or live demos (from CV hyperlinks).</p>
       <ul class="work-list">
-        <li class="reveal">
-          <a href="https://github.com/LikhitaYerra/Compar-IA-Benchmarking-Dashboard" target="_blank" rel="noopener">
-            <span class="w-title">Compar'IA</span>
-            <span class="w-desc">Multi-objective LLM evaluation across quality, latency, energy, CO₂, and cost. ICPR Green-PR 2026.</span>
-            <span class="w-meta">Python · dashboard · eval</span>
-          </a>
-        </li>
         <li class="reveal">
           <a href="https://emergency-response-twin.onrender.com" target="_blank" rel="noopener">
             <span class="w-title">Emergency Response Twin</span>
-            <span class="w-desc">Pre-hospital cardiac digital twin: live ECG → AI twin → hospital pre-allocation → 3D command center.</span>
-            <span class="w-meta">Live demo · Render</span>
+            <span class="w-desc">Cardiac digital twin simulating patient trajectories from field ECG for predictive resource allocation via IoT sensors and AI simulation. Live 3D command center.</span>
+            <span class="w-meta">Live demo</span>
+          </a>
+          <a class="sublink" href="https://github.com/LikhitaYerra/emergency-response-twin" target="_blank" rel="noopener">Code on GitHub</a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/Compar-IA-Benchmarking-Dashboard" target="_blank" rel="noopener">
+            <span class="w-title">Compar'IA LLM Benchmarking Dashboard</span>
+            <span class="w-desc">Benchmarked LLaMA, Mistral, GPT, and DeepSeek across 30 prompts on quality, latency, energy, CO₂, and cost. ICPR Green-PR 2026.</span>
+            <span class="w-meta">Python · eval</span>
           </a>
         </li>
         <li class="reveal">
-          <a href="https://github.com/LikhitaYerra/emergency-response-twin" target="_blank" rel="noopener">
-            <span class="w-title">Emergency twin (code)</span>
-            <span class="w-desc">Source for the cardiac twin and command-center stack.</span>
-            <span class="w-meta">GitHub</span>
+          <a href="https://github.com/LikhitaYerra/FINRL" target="_blank" rel="noopener">
+            <span class="w-title">FinRL · Portfolio Optimization</span>
+            <span class="w-desc">PPO/SAC RL agents for portfolio decisions using LLM-based state abstraction from financial news; supports the arXiv publication on semantic state abstraction.</span>
+            <span class="w-meta">RL · LLM</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/System-Dynamics-" target="_blank" rel="noopener">
+            <span class="w-title">System Dynamics Model Factory</span>
+            <span class="w-desc">React + FastAPI + scipy ODE simulator modelling long-term AI investment scenarios with optional RAG enrichment.</span>
+            <span class="w-meta">React · FastAPI</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/TouchlessSHOP" target="_blank" rel="noopener">
+            <span class="w-title">TouchlessSHOP</span>
+            <span class="w-desc">Touch-free e-commerce using MediaPipe hand gestures and Web Speech API, built for kiosks and hygiene-sensitive environments.</span>
+            <span class="w-meta">MediaPipe</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/ai-marketing-planner-1.0" target="_blank" rel="noopener">
+            <span class="w-title">AI Marketing Planner</span>
+            <span class="w-desc">4-variant A/B content platform with multilingual output (EN/ES/FR), FAISS knowledge base, and live search citation injection.</span>
+            <span class="w-meta">RAG · FAISS</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/Chess-Vision-Narrator" target="_blank" rel="noopener">
+            <span class="w-title">SmartChessVision / Chess Vision Narrator</span>
+            <span class="w-desc">YOLOv8 + python-chess + GPT-4 voiced commentary pipeline for chess move detection. IEEE Cognitive Nexus Magazine 2025.</span>
+            <span class="w-meta">CV · LLM</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/Chess-Object-Detection" target="_blank" rel="noopener">
+            <span class="w-title">Chess Piece Detection (YOLOv5)</span>
+            <span class="w-desc">YOLOv5 at 99.3% mAP50 across 12 piece classes on 1,592 labelled images, real-time inference.</span>
+            <span class="w-meta">YOLO · 99.3% mAP50</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/YouTube-Summarizer-with-FARM-Stack" target="_blank" rel="noopener">
+            <span class="w-title">VidSummarize</span>
+            <span class="w-desc">Async FARM-stack app with GPT-3.5 transcript summarisation, CRUD bookmarks, and MockEngine for zero-dependency CI testing.</span>
+            <span class="w-meta">FARM · GPT</span>
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/LikhitaYerra/AI-job-matcher" target="_blank" rel="noopener">
+            <span class="w-title">AI Skill Matcher</span>
+            <span class="w-desc">PDF resume parser scoring against 500+ job listings with Plotly gauge charts and market gap dashboards.</span>
+            <span class="w-meta">NLP · Plotly</span>
           </a>
         </li>
         <li class="reveal">
           <a href="https://github.com/LikhitaYerra/rag_tool" target="_blank" rel="noopener">
             <span class="w-title">RAG tool</span>
             <span class="w-desc">Retrieval-augmented generation tooling for document Q&amp;A and pipeline experiments.</span>
-            <span class="w-meta">Python · RAG</span>
+            <span class="w-meta">RAG</span>
           </a>
         </li>
         <li class="reveal">
@@ -87,17 +152,10 @@
           </a>
         </li>
         <li class="reveal">
-          <a href="https://github.com/LikhitaYerra/ChessVision" target="_blank" rel="noopener">
-            <span class="w-title">ChessVision</span>
-            <span class="w-desc">YOLOv8 + LLM voiced commentary for chess video. IEEE Cognitive Nexus Magazine 2025.</span>
-            <span class="w-meta">CV · YOLO · LLM</span>
-          </a>
-        </li>
-        <li class="reveal">
           <a href="https://github.com/LikhitaYerra/smc_cnn" target="_blank" rel="noopener">
             <span class="w-title">SMC + CNN twin</span>
-            <span class="w-desc">Adaptive control with CNN environment classification and a live 3D twin (DelCon 2026).</span>
-            <span class="w-meta">control · PyTorch</span>
+            <span class="w-desc">CNN-supervised sliding-mode control with a live 3D digital twin (DelCon 2026): ~36% less chattering; EnvCNN 95.1%.</span>
+            <span class="w-meta">control · twin</span>
           </a>
         </li>
         <li class="reveal">
@@ -111,26 +169,47 @@
     </section>
 
     <section id="research" class="section">
-      <h2>Research</h2>
+      <h2>Publications &amp; talks</h2>
       <ul class="pub-list">
         <li class="reveal">
-          <p class="pub-title">Do Language Models Know When Their Knowledge Expires?</p>
-          <p class="pub-venue">Women in NeurIPS 2026 (submitted). Calibration decay: accuracy collapses post-cutoff while confidence stays ~90-95%.</p>
-          <a class="pub-link" href="https://drive.google.com/file/d/1kFpBx8oXSipjM6tkSKiw-k1Rwzb2gdGP/view?usp=sharing" target="_blank" rel="noopener">Paper</a>
+          <p class="pub-title">Do Language Models Know When Their Knowledge Expires? Measuring Calibration Decay Across the Knowledge Horizon</p>
+          <p class="pub-venue">Submitted to Women in NeurIPS 2026. Calibration aging on dated facts: accuracy collapses post-cutoff while confidence stays ~90-95%.</p>
+          <a class="pub-link" href="https://drive.google.com/file/d/1kFpBx8oXSipjM6tkSKiw-k1Rwzb2gdGP/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
         </li>
         <li class="reveal">
-          <p class="pub-title">Compar'IA: Sustainability-Aware Multi-Objective LLM Evaluation</p>
-          <p class="pub-venue">Green-PR Workshop, ICPR 2026, Lyon.</p>
-          <a class="pub-link" href="https://drive.google.com/file/d/1xC9alkUrMdnNXue8r8t5y2pQz-HeAo2F/view?usp=sharing" target="_blank" rel="noopener">Paper</a>
+          <p class="pub-title">Compar'IA: An Extensible Sustainability-Aware Dashboard for Multi-Objective Evaluation of Large Language Models</p>
+          <p class="pub-venue">Green-PR Workshop, ICPR 2026, Lyon, France.</p>
+          <a class="pub-link" href="https://green-pr.sciencesconf.org/" target="_blank" rel="noopener">Workshop</a>
+          <a class="pub-link" href="https://drive.google.com/file/d/1xC9alkUrMdnNXue8r8t5y2pQz-HeAo2F/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
+          <a class="pub-link" href="https://github.com/LikhitaYerra/Compar-IA-Benchmarking-Dashboard" target="_blank" rel="noopener">Code</a>
         </li>
         <li class="reveal">
-          <p class="pub-title">Visualizing Adaptive Control: 3D Digital Twin for CNN-Supervised SMC</p>
-          <p class="pub-venue">DelCon 2026, BITS Pilani. ~36% less chattering; EnvCNN 95.1%.</p>
-          <a class="pub-link" href="https://drive.google.com/file/d/1H09hfK1_8U0fcTzYWYiFR_SMd_pRs4DJ/view?usp=sharing" target="_blank" rel="noopener">Paper</a>
+          <p class="pub-title">Semantic State Abstraction Interfaces for LLM-Augmented Portfolio Decisions</p>
+          <p class="pub-venue">Multi-axis news decomposition and RL diagnostics.</p>
+          <a class="pub-link" href="https://arxiv.org/abs/2605.06730" target="_blank" rel="noopener">arXiv</a>
+        </li>
+        <li class="reveal">
+          <p class="pub-title">AI-Powered Chess Insights: Live Move Detection and Narration Using Computer Vision and Large Language Models</p>
+          <p class="pub-venue">IEEE Cognitive Nexus Magazine, Vol. 1, Issue 1, 2025.</p>
+          <a class="pub-link" href="https://hal.science/hal-05188523v1" target="_blank" rel="noopener">HAL</a>
+          <a class="pub-link" href="https://github.com/LikhitaYerra/Chess-Vision-Narrator" target="_blank" rel="noopener">Code</a>
+        </li>
+        <li class="reveal">
+          <p class="pub-title">Building Trustworthy AI Pipelines: A Compliance-Aware Architecture Using Retrieval-Augmented Generation</p>
+          <p class="pub-venue">Chapter accepted, forthcoming Elsevier book <em>Trustworthy LLMs: Principles and Challenges</em>, March 2027.</p>
+        </li>
+        <li class="reveal">
+          <p class="pub-title">Visualizing Adaptive Control: A 3D Digital Twin Framework for CNN-Supervised SMC in Mobile Robots</p>
+          <p class="pub-venue">DelCon 2026, BITS Pilani.</p>
+          <a class="pub-link" href="https://drive.google.com/file/d/1H09hfK1_8U0fcTzYWYiFR_SMd_pRs4DJ/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
         </li>
         <li class="reveal">
           <p class="pub-title">PFE: Reference-Angle Optimization for Identity-Preserving Face Generation</p>
           <p class="pub-venue">aivancity PGE5, Antoun Yaacoub (defended Sep 2026). ArcFace + LOSO, top-2 @ 85%.</p>
+        </li>
+        <li class="reveal">
+          <p class="pub-title">EuroSciPy 2025</p>
+          <p class="pub-venue">Tutorial: Building Practical Tools for Ethical AI · Talk: Chess Video Analyzer (real-time move detection &amp; narration).</p>
         </li>
       </ul>
     </section>
@@ -141,48 +220,103 @@
         <h3>Employment</h3>
         <ul class="exp-list">
           <li>
-            <span class="exp-role">AI Engineer, Apprentice</span>
-            <span class="exp-org">IAware / amzilai · Paris · 2025 to present</span>
-            <p>Production RAG-LLM and client AI features end to end: problem framing, model/API choice, ship, iterate from failures.</p>
+            <span class="exp-role">AI Engineer, Apprentice (Technical Lead track)</span>
+            <span class="exp-org">IAware / amzilai · Paris · Sep 2025 to present</span>
+            <p>Delivered end-to-end AI solutions across 5 domains (photography, marketing, aesthetics, real estate, service automation): problem framing, model/API choice, ship into client workflows, iterate from production failures.</p>
+          </li>
+          <li>
+            <span class="exp-role">AI Engineer Intern</span>
+            <span class="exp-org">IAware / amzilai · Paris · May to Sep 2025</span>
+            <p>End-to-end development of industrial AI projects across diverse domains.</p>
           </li>
           <li>
             <span class="exp-role">Lead Data Scientist Intern</span>
-            <span class="exp-org">AIRecruiter · Zurich · Jul to Sep 2024</span>
-            <p>First technical hire; RAG-LLM pipelines with founder and ex-Google engineers.</p>
+            <span class="exp-org"><a href="https://rovr.ch/" target="_blank" rel="noopener">AIRecruiter / Rovr</a> · Zurich · Jul to Sep 2024</span>
+            <p>First technical hire; built RAG-LLM pipelines from scratch with the founder and ex-Google engineers.</p>
           </li>
         </ul>
       </div>
       <div class="exp-block reveal">
-        <h3>AI Clinic (school projects)</h3>
-        <p class="section-note">Partner work via aivancity AI Clinic. Not independent full-time jobs at those companies.</p>
-        <ul class="exp-list compact">
-          <li><span class="exp-org">Pangea Summit</span> multimodal RAG (CLIP + CLAP)</li>
-          <li><span class="exp-org">IMAGE et CONCEPT</span> emotion-aware conversational avatar</li>
-          <li><span class="exp-org">Atos</span> NFT time-series forecasting</li>
-          <li><span class="exp-org">UIZ.CARE</span> ICD medical coding (~93%)</li>
+        <h3>AI Clinic (aivancity school projects)</h3>
+        <p class="section-note">Partner projects for real clients, delivered as part of the aivancity AI Clinic curriculum. Not independent full-time employment at those companies.</p>
+        <ul class="exp-list">
+          <li>
+            <span class="exp-role">Multimodal RAG</span>
+            <span class="exp-org"><a href="https://www.pangea-summit.com/pangea-labs" target="_blank" rel="noopener">Pangea Summit / Pangea Labs</a> · Jan to Mar 2025</span>
+            <p>CLIP + CLAP multimodal RAG: 9.0/10 reliability, 99% compliance, 75% faster validation; piloted with 10 B2B teams.</p>
+          </li>
+          <li>
+            <span class="exp-role">Emotion-aware conversational avatar</span>
+            <span class="exp-org"><a href="https://www.imageetconcept.com/" target="_blank" rel="noopener">Groupe IMAGE et CONCEPT</a> · Sep to Dec 2024</span>
+            <p>LLM + CogVideo + Wave2Lip for naturalistic AI video dialogue.</p>
+          </li>
+          <li>
+            <span class="exp-role">NFT time-series forecasting</span>
+            <span class="exp-org"><a href="https://atos.net/en/" target="_blank" rel="noopener">Atos</a> · Jan to Mar 2024</span>
+            <p>Prophet + XGBoost on blockchain data.</p>
+          </li>
+          <li>
+            <span class="exp-role">ICD medical coding</span>
+            <span class="exp-org"><a href="https://www.uiz.care/" target="_blank" rel="noopener">UIZ.CARE</a> · Oct to Dec 2023</span>
+            <p>~93% accuracy on a WHO-aligned clinical data dictionary.</p>
+          </li>
         </ul>
       </div>
       <div class="exp-block reveal">
         <h3>Education</h3>
         <ul class="exp-list">
           <li>
-            <span class="exp-role">MSc AI &amp; Data Science (PGE5)</span>
-            <span class="exp-org">aivancity · Paris · 2023 to present</span>
+            <span class="exp-role">Master's in AI and Data Science (Final Year / PGE5)</span>
+            <span class="exp-org">aivancity School for Technology, Business &amp; Society · Paris · Sep 2023 to present</span>
           </li>
           <li>
-            <span class="exp-role">B.Tech (Hons) Data Science &amp; Data Engineering</span>
-            <span class="exp-org">Lovely Professional University · India</span>
+            <span class="exp-role">B.Tech (Hons) in Data Science &amp; Data Engineering</span>
+            <span class="exp-org">Lovely Professional University · Punjab, India · Aug 2021 to Jul 2023</span>
           </li>
         </ul>
       </div>
     </section>
 
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid reveal">
+        <div><h3>Languages</h3><p>Python, SQL, TypeScript, JavaScript, Java, C</p></div>
+        <div><h3>LLMs &amp; NLP</h3><p>GPT-4o, Mistral, LangChain, LangGraph, RAG, Transformers, CLIP, CLAP, MCP, gTTS, MediaPipe</p></div>
+        <div><h3>AI / ML</h3><p>PyTorch, TensorFlow, Keras, scikit-learn, OpenCV, YOLOv5/v8, Prophet, SHAP, LIME, VAE, GAN, scipy, RL (PPO/SAC)</p></div>
+        <div><h3>Backend &amp; cloud</h3><p>FastAPI, Flask, Docker, GCP, Azure, MLflow, DVC, Weights &amp; Biases, Hugging Face</p></div>
+        <div><h3>Data</h3><p>Pandas, NumPy, MongoDB, FAISS, Pinecone, Neo4j</p></div>
+        <div><h3>Frontend &amp; viz</h3><p>React, TypeScript, Vite, Streamlit, Gradio, Recharts, Plotly, Matplotlib, Seaborn, Tableau, Power BI</p></div>
+      </div>
+    </section>
+
+    <section id="certs" class="section">
+      <h2>Certificates</h2>
+      <ul class="cert-list">
+        <li class="reveal">
+          <a href="https://learn.microsoft.com/en-gb/users/likhitayerra-4982/credentials/5e5996291fae3187" target="_blank" rel="noopener">
+            Microsoft Certified: Azure AI Apps and Agents Developer Associate
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://learn.microsoft.com/en-gb/users/likhitayerra-4982/credentials/8876da239826e8ed?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener">
+            Microsoft Certified: Azure Data Scientist Associate
+          </a>
+        </li>
+        <li class="reveal">
+          <a href="https://badges.parchment.com/public/assertions/5m8TspJYQZiUywkpMEJh1Q" target="_blank" rel="noopener">
+            AI Product Engineering: From Concept to Market · UC Berkeley SCET
+          </a>
+        </li>
+      </ul>
+    </section>
+
     <section id="contact" class="section contact">
       <h2>Contact</h2>
-      <p class="lede short">Open to research engineering and ML roles in Île-de-France (Saclay corridor / Paris).</p>
+      <p class="lede short">Open to research engineering and ML roles in Île-de-France (Saclay corridor / Paris). Currently authorized to work in France (permit through Dec 2026; extension planned).</p>
       <div class="cta-row">
         <a class="btn primary" href="mailto:likhita.yerra@aivancity.education">likhita.yerra@aivancity.education</a>
-        <a class="btn" href="https://www.linkedin.com/in/likhita-yerra" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://linkedin.com/in/likhita-yerra" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/LikhitaYerra" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="tel:+33744729838">+33 7 44 72 98 38</a>
       </div>
     </section>
