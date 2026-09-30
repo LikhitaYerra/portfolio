@@ -13,11 +13,15 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="progress" aria-hidden="true"><div class="progress-bar"></div></div>
   <div class="noise" aria-hidden="true"></div>
-  <div class="glow" aria-hidden="true"></div>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+  <div class="grid-fade" aria-hidden="true"></div>
+  <div class="pointer-glow" aria-hidden="true"></div>
 
   <header class="top">
-    <a class="mark" href="#top">LY</a>
+    <a class="mark" href="#top"><span>L</span>Y</a>
     <nav>
       <a href="#work">Work</a>
       <a href="#research">Research</a>
@@ -30,29 +34,60 @@
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">Paris · Châtenay-Malabry</p>
-      <h1 class="brand">Likhita<br />Yerra</h1>
-      <p class="lede">
-        AI Engineer and AI &amp; Data Science researcher. I work at the intersection of emerging AI,
-        responsible innovation, and systems that survive contact with users: trustworthy pipelines,
-        sustainable LLM evaluation, RAG, and AI-driven decision-making.
-      </p>
-      <div class="cta-row">
-        <a class="btn primary" href="mailto:likhita.yerra@aivancity.education">Email</a>
-        <a class="btn" href="https://github.com/LikhitaYerra" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://linkedin.com/in/likhita-yerra" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="tel:+33744729838">+33 7 44 72 98 38</a>
+      <div class="hero-copy">
+        <p class="eyebrow enter" style="--d:0">Paris · Châtenay-Malabry · open to IDF roles</p>
+        <h1 class="brand enter" style="--d:1">
+          <span class="line">Likhita</span>
+          <span class="line accent-line">Yerra</span>
+        </h1>
+        <p class="lede enter" style="--d:2">
+          AI Engineer and researcher. I ship production RAG-LLM systems, then measure what breaks:
+          calibration, retrieval, latency, cost.
+        </p>
+        <div class="cta-row enter" style="--d:3">
+          <a class="btn primary" href="mailto:likhita.yerra@aivancity.education">Email me</a>
+          <a class="btn" href="https://github.com/LikhitaYerra" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://linkedin.com/in/likhita-yerra" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="ring r1"></div>
-        <div class="ring r2"></div>
-        <div class="ring r3"></div>
-        <span class="metric">generate → measure → rebuild</span>
+
+      <div class="hero-stage enter" style="--d:2" aria-hidden="true">
+        <svg class="orbit-svg" viewBox="0 0 420 420" fill="none">
+          <circle class="track" cx="210" cy="210" r="168" />
+          <circle class="track dashed" cx="210" cy="210" r="118" />
+          <circle class="track" cx="210" cy="210" r="68" />
+          <g class="spin-slow">
+            <circle cx="210" cy="42" r="6" class="node" />
+            <circle cx="378" cy="210" r="4" class="node soft" />
+            <circle cx="210" cy="378" r="5" class="node" />
+          </g>
+          <g class="spin-fast">
+            <circle cx="328" cy="92" r="3.5" class="node warm" />
+            <circle cx="92" cy="328" r="3.5" class="node warm" />
+          </g>
+          <path class="arc" d="M70 210 A140 140 0 0 1 210 70" />
+        </svg>
+        <div class="stage-core">
+          <span class="core-kicker">loop</span>
+          <span class="core-title">generate</span>
+          <span class="core-title">measure</span>
+          <span class="core-title">rebuild</span>
+        </div>
       </div>
     </section>
 
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>LLM evaluation</span><span>RAG systems</span><span>Calibration decay</span><span>Digital twins</span><span>Computer vision</span><span>Agentic workflows</span><span>Trustworthy AI</span>
+        <span>LLM evaluation</span><span>RAG systems</span><span>Calibration decay</span><span>Digital twins</span><span>Computer vision</span><span>Agentic workflows</span><span>Trustworthy AI</span>
+      </div>
+    </div>
+
     <section class="section about-strip reveal">
-      <h2>About</h2>
+      <div class="section-head">
+        <span class="ghost">01</span>
+        <h2>About</h2>
+      </div>
       <p>
         Master’s student in AI &amp; Data Science at aivancity (Paris, final year / PGE5). By day I
         ship production AI as an engineer apprentice at IAware/amzilai. My research asks not only
@@ -62,104 +97,142 @@
       </p>
     </section>
 
+    <section class="section spotlight reveal">
+      <div class="section-head">
+        <span class="ghost">★</span>
+        <h2>Spotlight</h2>
+      </div>
+      <div class="spot-grid">
+        <a class="spot" href="https://emergency-response-twin.onrender.com" target="_blank" rel="noopener">
+          <span class="spot-tag">Live demo</span>
+          <h3>Emergency Response Twin</h3>
+          <p>Cardiac digital twin from field ECG → hospital pre-allocation → 3D command center.</p>
+          <span class="spot-go">Open demo →</span>
+        </a>
+        <a class="spot" href="https://github.com/LikhitaYerra/Compar-IA-Benchmarking-Dashboard" target="_blank" rel="noopener">
+          <span class="spot-tag">ICPR Green-PR</span>
+          <h3>Compar'IA</h3>
+          <p>Multi-objective LLM eval: quality, latency, energy, CO₂, cost across frontier models.</p>
+          <span class="spot-go">View code →</span>
+        </a>
+      </div>
+    </section>
+
     <section id="work" class="section">
-      <h2>Selected projects</h2>
-      <p class="section-note">Titles link to GitHub or live demos (from CV hyperlinks).</p>
+      <div class="section-head">
+        <span class="ghost">02</span>
+        <h2>Selected projects</h2>
+      </div>
+      <p class="section-note">Every title opens the repo or live demo.</p>
       <ul class="work-list">
-        <li class="reveal">
+        <li class="reveal" style="--i:0">
           <a href="https://emergency-response-twin.onrender.com" target="_blank" rel="noopener">
+            <span class="w-num">01</span>
             <span class="w-title">Emergency Response Twin</span>
             <span class="w-desc">Cardiac digital twin simulating patient trajectories from field ECG for predictive resource allocation via IoT sensors and AI simulation. Live 3D command center.</span>
             <span class="w-meta">Live demo</span>
           </a>
           <a class="sublink" href="https://github.com/LikhitaYerra/emergency-response-twin" target="_blank" rel="noopener">Code on GitHub</a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:1">
           <a href="https://github.com/LikhitaYerra/Compar-IA-Benchmarking-Dashboard" target="_blank" rel="noopener">
+            <span class="w-num">02</span>
             <span class="w-title">Compar'IA LLM Benchmarking Dashboard</span>
             <span class="w-desc">Benchmarked LLaMA, Mistral, GPT, and DeepSeek across 30 prompts on quality, latency, energy, CO₂, and cost. ICPR Green-PR 2026.</span>
             <span class="w-meta">Python · eval</span>
           </a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:2">
           <a href="https://github.com/LikhitaYerra/FINRL" target="_blank" rel="noopener">
+            <span class="w-num">03</span>
             <span class="w-title">FinRL · Portfolio Optimization</span>
             <span class="w-desc">PPO/SAC RL agents for portfolio decisions using LLM-based state abstraction from financial news; supports the arXiv publication on semantic state abstraction.</span>
             <span class="w-meta">RL · LLM</span>
           </a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:3">
           <a href="https://github.com/LikhitaYerra/System-Dynamics-" target="_blank" rel="noopener">
+            <span class="w-num">04</span>
             <span class="w-title">System Dynamics Model Factory</span>
             <span class="w-desc">React + FastAPI + scipy ODE simulator modelling long-term AI investment scenarios with optional RAG enrichment.</span>
             <span class="w-meta">React · FastAPI</span>
           </a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:4">
           <a href="https://github.com/LikhitaYerra/TouchlessSHOP" target="_blank" rel="noopener">
+            <span class="w-num">05</span>
             <span class="w-title">TouchlessSHOP</span>
             <span class="w-desc">Touch-free e-commerce using MediaPipe hand gestures and Web Speech API, built for kiosks and hygiene-sensitive environments.</span>
             <span class="w-meta">MediaPipe</span>
           </a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:5">
           <a href="https://github.com/LikhitaYerra/ai-marketing-planner-1.0" target="_blank" rel="noopener">
+            <span class="w-num">06</span>
             <span class="w-title">AI Marketing Planner</span>
             <span class="w-desc">4-variant A/B content platform with multilingual output (EN/ES/FR), FAISS knowledge base, and live search citation injection.</span>
             <span class="w-meta">RAG · FAISS</span>
           </a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:6">
           <a href="https://github.com/LikhitaYerra/Chess-Vision-Narrator" target="_blank" rel="noopener">
+            <span class="w-num">07</span>
             <span class="w-title">SmartChessVision / Chess Vision Narrator</span>
             <span class="w-desc">YOLOv8 + python-chess + GPT-4 voiced commentary pipeline for chess move detection. IEEE Cognitive Nexus Magazine 2025.</span>
             <span class="w-meta">CV · LLM</span>
           </a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:7">
           <a href="https://github.com/LikhitaYerra/Chess-Object-Detection" target="_blank" rel="noopener">
+            <span class="w-num">08</span>
             <span class="w-title">Chess Piece Detection (YOLOv5)</span>
             <span class="w-desc">YOLOv5 at 99.3% mAP50 across 12 piece classes on 1,592 labelled images, real-time inference.</span>
             <span class="w-meta">YOLO · 99.3% mAP50</span>
           </a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:8">
           <a href="https://github.com/LikhitaYerra/YouTube-Summarizer-with-FARM-Stack" target="_blank" rel="noopener">
+            <span class="w-num">09</span>
             <span class="w-title">VidSummarize</span>
             <span class="w-desc">Async FARM-stack app with GPT-3.5 transcript summarisation, CRUD bookmarks, and MockEngine for zero-dependency CI testing.</span>
             <span class="w-meta">FARM · GPT</span>
           </a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:9">
           <a href="https://github.com/LikhitaYerra/AI-job-matcher" target="_blank" rel="noopener">
+            <span class="w-num">10</span>
             <span class="w-title">AI Skill Matcher</span>
             <span class="w-desc">PDF resume parser scoring against 500+ job listings with Plotly gauge charts and market gap dashboards.</span>
             <span class="w-meta">NLP · Plotly</span>
           </a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:10">
           <a href="https://github.com/LikhitaYerra/rag_tool" target="_blank" rel="noopener">
+            <span class="w-num">11</span>
             <span class="w-title">RAG tool</span>
             <span class="w-desc">Retrieval-augmented generation tooling for document Q&amp;A and pipeline experiments.</span>
             <span class="w-meta">RAG</span>
           </a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:11">
           <a href="https://github.com/LikhitaYerra/indexer" target="_blank" rel="noopener">
+            <span class="w-num">12</span>
             <span class="w-title">Indexer</span>
             <span class="w-desc">AI-powered book index generator: extract person names from Word documents.</span>
             <span class="w-meta">NLP · docs</span>
           </a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:12">
           <a href="https://github.com/LikhitaYerra/smc_cnn" target="_blank" rel="noopener">
+            <span class="w-num">13</span>
             <span class="w-title">SMC + CNN twin</span>
             <span class="w-desc">CNN-supervised sliding-mode control with a live 3D digital twin (DelCon 2026): ~36% less chattering; EnvCNN 95.1%.</span>
             <span class="w-meta">control · twin</span>
           </a>
         </li>
-        <li class="reveal">
+        <li class="reveal" style="--i:13">
           <a href="https://github.com/LikhitaYerra/aegis-eu-agent" target="_blank" rel="noopener">
+            <span class="w-num">14</span>
             <span class="w-title">Aegis EU agent</span>
             <span class="w-desc">Agent / compliance-oriented LLM tooling experiment.</span>
             <span class="w-meta">agents</span>
@@ -169,7 +242,10 @@
     </section>
 
     <section id="research" class="section">
-      <h2>Publications &amp; talks</h2>
+      <div class="section-head">
+        <span class="ghost">03</span>
+        <h2>Publications &amp; talks</h2>
+      </div>
       <ul class="pub-list">
         <li class="reveal">
           <p class="pub-title">Do Language Models Know When Their Knowledge Expires? Measuring Calibration Decay Across the Knowledge Horizon</p>
@@ -215,7 +291,10 @@
     </section>
 
     <section id="experience" class="section">
-      <h2>Experience</h2>
+      <div class="section-head">
+        <span class="ghost">04</span>
+        <h2>Experience</h2>
+      </div>
       <div class="exp-block reveal">
         <h3>Employment</h3>
         <ul class="exp-list">
@@ -278,7 +357,10 @@
     </section>
 
     <section id="skills" class="section">
-      <h2>Skills</h2>
+      <div class="section-head">
+        <span class="ghost">05</span>
+        <h2>Skills</h2>
+      </div>
       <div class="skills-grid reveal">
         <div><h3>Languages</h3><p>Python, SQL, TypeScript, JavaScript, Java, C</p></div>
         <div><h3>LLMs &amp; NLP</h3><p>GPT-4o, Mistral, LangChain, LangGraph, RAG, Transformers, CLIP, CLAP, MCP, gTTS, MediaPipe</p></div>
@@ -290,7 +372,10 @@
     </section>
 
     <section id="certs" class="section">
-      <h2>Certificates</h2>
+      <div class="section-head">
+        <span class="ghost">06</span>
+        <h2>Certificates</h2>
+      </div>
       <ul class="cert-list">
         <li class="reveal">
           <a href="https://learn.microsoft.com/en-gb/users/likhitayerra-4982/credentials/5e5996291fae3187" target="_blank" rel="noopener">
@@ -311,7 +396,10 @@
     </section>
 
     <section id="contact" class="section contact">
-      <h2>Contact</h2>
+      <div class="section-head">
+        <span class="ghost">07</span>
+        <h2>Let’s build</h2>
+      </div>
       <p class="lede short">Open to research engineering and ML roles in Île-de-France (Saclay corridor / Paris). Currently authorized to work in France (permit through Dec 2026; extension planned).</p>
       <div class="cta-row">
         <a class="btn primary" href="mailto:likhita.yerra@aivancity.education">likhita.yerra@aivancity.education</a>
