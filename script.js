@@ -53,3 +53,28 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+// Highlight the nav link of the section currently in view.
+const navLinks = [...document.querySelectorAll("nav a[href^='#']")];
+const sectionMap = new Map(
+  navLinks
+    .map((a) => [a, document.querySelector(a.getAttribute("href"))])
+    .filter(([, el]) => el)
+);
+
+const navObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach((a) => {
+        const active = sectionMap.get(a) === entry.target;
+        a.classList.toggle("active", active);
+        if (active) a.setAttribute("aria-current", "true");
+        else a.removeAttribute("aria-current");
+      });
+    });
+  },
+  { rootMargin: "-35% 0px -55% 0px", threshold: 0 }
+);
+
+sectionMap.forEach((el) => navObserver.observe(el));
