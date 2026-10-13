@@ -63,6 +63,7 @@
   <header class="top">
     <a class="mark" href="#top" aria-label="Likhita Yerra, back to top"><span>L</span>Y</a>
     <nav aria-label="Sections">
+      <a href="#figures">Figures</a>
       <a href="#work">Work</a>
       <a href="#research">Research</a>
       <a href="#experience">Experience</a>
@@ -185,6 +186,105 @@
         </a>
       </div>
     </section>
+
+    <section id="figures" class="section figures">
+      <div class="section-head">
+        <span class="ghost">◆</span>
+        <h2>Results in figures</h2>
+      </div>
+      <p class="section-note">Figures from my papers and screenshots of the running systems. Click any image to enlarge.</p>
+
+      <figure class="fig fig-wide reveal">
+        <button class="fig-open" type="button" data-full="assets/fig-calibration-aging.png" aria-label="Enlarge: calibration aging curves">
+          <img class="paper" src="assets/fig-calibration-aging.png" width="1800" height="428" loading="lazy"
+               alt="Three line charts, one per model (Qwen2.5-1.5B-Instruct, SmolLM2-1.7B-Instruct, Qwen2.5-3B-Instruct). Accuracy falls toward zero for facts newer than the model's cutoff, while token confidence and verbalized confidence stay flat and high.">
+        </button>
+        <figcaption>
+          <span class="fig-tag">Women in NeurIPS 2026 (submitted)</span>
+          <h3>Calibration aging curves</h3>
+          <p>
+            Accuracy and confidence on 174 dated head-of-government facts, binned by fact age, for three open-weight
+            models (dashed line: the model's cutoff). Accuracy collapses for facts newer than the cutoff
+            (Qwen2.5-1.5B: 16.9% to 2.4%) while neither confidence signal follows it.
+          </p>
+          <a class="pub-link" href="https://drive.google.com/file/d/1kFpBx8oXSipjM6tkSKiw-k1Rwzb2gdGP/view?usp=sharing" target="_blank" rel="noopener">Read the paper</a>
+        </figcaption>
+      </figure>
+
+      <figure class="fig fig-wide fig-dark reveal">
+        <button class="fig-open" type="button" data-full="assets/shot-emergency-twin.jpg" aria-label="Enlarge: Emergency Response Twin screenshot">
+          <img src="assets/shot-emergency-twin.jpg" width="1800" height="1125" loading="lazy"
+               alt="Screenshot of the Emergency Response Twin command center at T+11:01: a live ECG classified as STEMI at 98 percent, patient twin vitals, a 17 percent 15-minute VF hazard, and a hospital operational twin that diverts from St. Mary's PCI Center to Riverside Heart Institute.">
+        </button>
+        <figcaption>
+          <span class="fig-tag">Live system · simulated scenario</span>
+          <h3>Emergency Response Twin</h3>
+          <p>
+            Evolving-STEMI scenario at T+11:01. The ECG is classified as STEMI (98%), the patient twin forecasts a 17%
+            15-minute VF hazard, and the hospital twin diverts from a PCI center whose cath lab is occupied to one
+            with a free cath lab, then pre-allocates the ICU bed and cardiologist.
+          </p>
+          <a class="pub-link" href="https://emergency-response-twin.onrender.com" target="_blank" rel="noopener">Open the demo</a>
+          <a class="pub-link" href="https://github.com/LikhitaYerra/emergency-response-twin" target="_blank" rel="noopener">Code</a>
+        </figcaption>
+      </figure>
+
+      <div class="fig-row">
+        <figure class="fig reveal">
+          <button class="fig-open" type="button" data-full="assets/fig-chattering.png" aria-label="Enlarge: chattering comparison">
+            <img class="paper" src="assets/fig-chattering.png" width="1500" height="617" loading="lazy"
+                 alt="Grouped bar chart of the chattering index in five scenarios (normal, noise, disturbance, slip, combined) for the classical, fuzzy, CNN-adaptive, oracle and RL controllers. In the noise and combined scenarios, classical and fuzzy control chatter far more than CNN, oracle and RL.">
+          </button>
+          <figcaption>
+            <span class="fig-tag">IEEE DELCON 2026</span>
+            <h3>Chattering across controllers</h3>
+            <p>
+              Under sensor noise the CNN-adaptive controller cuts angular-velocity chattering by 35.7% against classical
+              sliding mode control.
+            </p>
+            <a class="pub-link" href="assets/Paper_DELCON_CNN_Adaptive_SMC.pdf" target="_blank" rel="noopener">Read the paper</a>
+            <a class="pub-link" href="https://github.com/LikhitaYerra/smc_cnn" target="_blank" rel="noopener">Code</a>
+          </figcaption>
+        </figure>
+
+        <figure class="fig reveal">
+          <button class="fig-open" type="button" data-full="assets/fig-architecture.png" aria-label="Enlarge: system architecture">
+            <img class="paper" src="assets/fig-architecture.png" width="1500" height="894" loading="lazy"
+                 alt="System architecture diagram: a 64 by 64 environment map feeds a five-class CNN classifier, then a parameter lookup table, an SMC controller and a differential-drive robot. A PPO reinforcement-learning agent is shown as an alternative path to the controller. A 3D digital twin built with React, Three.js and a FastAPI WebSocket sits underneath.">
+          </button>
+          <figcaption>
+            <span class="fig-tag">EIRT 2026 (IEEE)</span>
+            <h3>CNN-adaptive control pipeline</h3>
+            <p>
+              A CNN classifies the occupancy map, a lookup table sets the controller gains, and a PPO agent is the
+              alternative. Streamed to a live 3D digital twin (React, Three.js, FastAPI WebSocket).
+            </p>
+            <a class="pub-link" href="https://drive.google.com/file/d/1H09hfK1_8U0fcTzYWYiFR_SMd_pRs4DJ/view?usp=sharing" target="_blank" rel="noopener">Read the paper</a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <figure class="fig fig-wide reveal">
+        <button class="fig-open" type="button" data-full="assets/fig-trajectories.png" aria-label="Enlarge: robot trajectories">
+          <img class="paper" src="assets/fig-trajectories.png" width="1700" height="965" loading="lazy"
+               alt="Five small plots of robot trajectories in the normal, noise, disturbance, slip and combined scenarios. The classical and CNN-adaptive controllers follow the desired straight-line path; the disturbance and combined plots show the jump from the impulse push and the recovery afterwards.">
+        </button>
+        <figcaption>
+          <span class="fig-tag">IEEE DELCON 2026</span>
+          <h3>Robot trajectories in five scenarios</h3>
+          <p>
+            Classical versus CNN-adaptive sliding mode control tracking a straight-line reference under injected
+            sensor noise, an impulse disturbance, wheel slip, and all three combined.
+          </p>
+          <a class="pub-link" href="assets/Paper_DELCON_CNN_Adaptive_SMC.pdf" target="_blank" rel="noopener">Read the paper</a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Enlarged figure">
+      <button class="lightbox-close" type="button" aria-label="Close">Close</button>
+      <img alt="">
+    </dialog>
 
     <section id="work" class="section">
       <div class="section-head">

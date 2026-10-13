@@ -78,3 +78,21 @@ const navObserver = new IntersectionObserver(
 );
 
 sectionMap.forEach((el) => navObserver.observe(el));
+
+// Click-to-enlarge for figures.
+const lightbox = document.getElementById("lightbox");
+if (lightbox && typeof lightbox.showModal === "function") {
+  const lightboxImg = lightbox.querySelector("img");
+  document.querySelectorAll(".fig-open").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const thumb = btn.querySelector("img");
+      lightboxImg.src = btn.dataset.full;
+      lightboxImg.alt = thumb ? thumb.alt : "";
+      lightbox.showModal();
+    });
+  });
+  lightbox.addEventListener("click", (e) => {
+    // Close when clicking the backdrop or the close button.
+    if (e.target === lightbox || e.target.closest(".lightbox-close")) lightbox.close();
+  });
+}
